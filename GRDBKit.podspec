@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
     
     s.name                    = "GRDBKit"
     s.version                 = "0.0.1"
-    s.summary                 = "A short description of GRDBKit."
+    s.summary                 = "Using ideas from Vapor's Fluent with GRDB.swift"
     s.homepage                = "http://github.com/hiimtmac/GRDBKit"
     s.license                 = { :type => "MIT", :file => "LICENSE" }
     s.author                  = "Taylor McIntyre"
