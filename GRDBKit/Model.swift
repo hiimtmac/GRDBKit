@@ -99,4 +99,12 @@ extension GRDBModel where Self: MutablePersistableRecord {
         modelUpdatedAt = date
         try insert(db)
     }
+    
+    mutating func save(timestamping db: Database, date: Date = .init()) throws {
+        do {
+            try update(timestamping: db, date: date)
+        } catch PersistenceError.recordNotFound {
+            try insert(timestamping: db, date: date)
+        }
+    }
 }
