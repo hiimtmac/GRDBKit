@@ -1,18 +1,13 @@
 platform :ios, '11.0'
 
-def shared
-    pod 'GRDB.swift'
-end
-
 target 'GRDBKit' do
     use_frameworks!
 
-    shared
-
-    # Pods for meetr
+    pod 'GRDB.swift'
+    
     target 'GRDBKitTests' do
-        inherit! :search_paths
-
-        shared
+      inherit! :search_paths
+      
+      pod 'GRDB.swift'
     end
 end

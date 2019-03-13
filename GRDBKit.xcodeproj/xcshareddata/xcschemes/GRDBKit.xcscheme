@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D71832B6220A04F2008E4090"
+               BlueprintIdentifier = "D7D2EF1C223964AD00F20CCF"
                BuildableName = "GRDBKitTests.xctest"
                BlueprintName = "GRDBKitTests"
                ReferencedContainer = "container:GRDBKit.xcodeproj">

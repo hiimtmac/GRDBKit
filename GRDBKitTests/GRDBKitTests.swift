@@ -2,7 +2,7 @@
 //  GRDBKitTests.swift
 //  GRDBKitTests
 //
-//  Created by Taylor McIntyre on 2019-02-05.
+//  Created by Taylor McIntyre on 2019-03-13.
 //  Copyright © 2019 hiimtmac. All rights reserved.
 //
 
@@ -111,12 +111,12 @@ extension TestInt: FetchableRecord, TableRecord, PersistableRecord {
 final class TestString: GRDBStringModel {
     static var createdAtKey: TimestampKey? { return \.createdAt }
     static var updatedAtKey: TimestampKey? { return \.modifiedAt }
-
+    
     var id: String?
     var name: String
     var createdAt: Date?
     var modifiedAt: Date?
-
+    
     init(id: String? = UUID().uuidString, name: String, createdAt: Date? = nil, modifiedAt: Date? = nil) {
         self.id = id
         self.name = name
@@ -148,3 +148,4 @@ extension TestString: FetchableRecord, TableRecord, PersistableRecord {
         container[Columns.modifiedAt] = modifiedAt
     }
 }
+
