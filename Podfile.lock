@@ -2,15 +2,21 @@ PODS:
   - GRDB.swift (3.7.0)
 
 DEPENDENCIES:
-  - GRDB.swift
+  - GRDB.swift (from `https://github.com/groue/GRDB.swift.git`, branch `GRDB-4.0`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - GRDB.swift
+EXTERNAL SOURCES:
+  GRDB.swift:
+    :branch: GRDB-4.0
+    :git: https://github.com/groue/GRDB.swift.git
+
+CHECKOUT OPTIONS:
+  GRDB.swift:
+    :commit: bfa5fbe8ce41ef16f03537b5e044b2df8aa29762
+    :git: https://github.com/groue/GRDB.swift.git
 
 SPEC CHECKSUMS:
-  GRDB.swift: 51cc9e57ae8ff7083a9d674c97925aa1de06aac5
+  GRDB.swift: 995f3289c25acc7970497a66ac4ee45a30c7b12c
 
-PODFILE CHECKSUM: b30da8a2b8dda29d45f61a6b64fc4a00c57b9a66
+PODFILE CHECKSUM: e9ecf17d08220b88b1e6b6c277fdae3fbdd8f9bc
 
 COCOAPODS: 1.6.1
