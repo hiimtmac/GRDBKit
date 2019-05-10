@@ -15,6 +15,7 @@
 		D7745BE821E3C16D004C9C6C /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BE721E3C16D004C9C6C /* ID.swift */; };
 		D7745BEA21E3C1BD004C9C6C /* GRDBKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BE921E3C1BD004C9C6C /* GRDBKitError.swift */; };
 		D7745BFB21E506B9004C9C6C /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BFA21E506B9004C9C6C /* Pivot.swift */; };
+		D78848A722845AEF0077A793 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78848A622845AEF0077A793 /* Exported.swift */; };
 		D7A867CC224A7A36005BAC35 /* TimestampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867CB224A7A36005BAC35 /* TimestampTests.swift */; };
 		D7A867CF224A7A63005BAC35 /* TestInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867CE224A7A63005BAC35 /* TestInt.swift */; };
 		D7A867D1224A7A68005BAC35 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D0224A7A68005BAC35 /* TestString.swift */; };
@@ -52,6 +53,7 @@
 		D7745BE721E3C16D004C9C6C /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
 		D7745BE921E3C1BD004C9C6C /* GRDBKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBKitError.swift; sourceTree = "<group>"; };
 		D7745BFA21E506B9004C9C6C /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
+		D78848A622845AEF0077A793 /* Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
 		D7A867CB224A7A36005BAC35 /* TimestampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampTests.swift; sourceTree = "<group>"; };
 		D7A867CE224A7A63005BAC35 /* TestInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInt.swift; sourceTree = "<group>"; };
 		D7A867D0224A7A68005BAC35 /* TestString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				D7745BCD21E3BFAF004C9C6C /* GRDBKit.h */,
 				D7745BCE21E3BFAF004C9C6C /* Info.plist */,
+				D78848A622845AEF0077A793 /* Exported.swift */,
 				D7745BE521E3C160004C9C6C /* Model.swift */,
 				D71832C4220A3DC7008E4090 /* IntModel.swift */,
 				D71832C6220A3DDA008E4090 /* StringModel.swift */,
@@ -239,6 +242,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D7745BC021E3BFAF004C9C6C;
 			productRefGroup = D7745BCB21E3BFAF004C9C6C /* Products */;
@@ -342,6 +346,7 @@
 				D71832C7220A3DDA008E4090 /* StringModel.swift in Sources */,
 				D7745BEA21E3C1BD004C9C6C /* GRDBKitError.swift in Sources */,
 				D71832C5220A3DC7008E4090 /* IntModel.swift in Sources */,
+				D78848A722845AEF0077A793 /* Exported.swift in Sources */,
 				D7745BE821E3C16D004C9C6C /* ID.swift in Sources */,
 				D7745BFB21E506B9004C9C6C /* Pivot.swift in Sources */,
 				D7745BE621E3C160004C9C6C /* Model.swift in Sources */,

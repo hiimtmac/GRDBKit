@@ -19,12 +19,12 @@ public protocol GRDBTimestampModel: GRDBModel {
 }
 
 extension GRDBTimestampModel {
-    /// See `Model`.
+    /// Default conformance
     public static var createdAtKey: TimestampKey? {
         return nil
     }
     
-    /// See `Model`.
+    /// Default conformance
     public static var updatedAtKey: TimestampKey? {
         return nil
     }

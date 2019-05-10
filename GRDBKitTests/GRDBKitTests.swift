@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import GRDB
 @testable import GRDBKit
 
 class GRDBKitTests: XCTestCase {
