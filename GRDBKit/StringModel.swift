@@ -15,6 +15,6 @@ public protocol GRDBStringModel: GRDBModel where Self.ID == String {
 }
 
 extension GRDBStringModel {
-    /// See `Model`
+    /// Default conformance
     public static var idKey: IDKey { return \.id }
 }

@@ -15,6 +15,6 @@ public protocol GRDBIntModel: GRDBModel where Self.ID == Int {
 }
 
 extension GRDBIntModel {
-    /// See `Model`
+    /// Default conformance
     public static var idKey: IDKey { return \.id }
 }

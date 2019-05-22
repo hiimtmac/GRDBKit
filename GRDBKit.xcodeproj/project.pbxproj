@@ -15,6 +15,11 @@
 		D7745BE821E3C16D004C9C6C /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BE721E3C16D004C9C6C /* ID.swift */; };
 		D7745BEA21E3C1BD004C9C6C /* GRDBKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BE921E3C1BD004C9C6C /* GRDBKitError.swift */; };
 		D7745BFB21E506B9004C9C6C /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7745BFA21E506B9004C9C6C /* Pivot.swift */; };
+		D78848A722845AEF0077A793 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78848A622845AEF0077A793 /* Exported.swift */; };
+		D7A867CC224A7A36005BAC35 /* TimestampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867CB224A7A36005BAC35 /* TimestampTests.swift */; };
+		D7A867CF224A7A63005BAC35 /* TestInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867CE224A7A63005BAC35 /* TestInt.swift */; };
+		D7A867D1224A7A68005BAC35 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D0224A7A68005BAC35 /* TestString.swift */; };
+		D7A867D3224A7B35005BAC35 /* Migrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A867D2224A7B35005BAC35 /* Migrate.swift */; };
 		D7BD4FA3220B53AE0071F392 /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BD4FA2220B53AE0071F392 /* Timestamp.swift */; };
 		D7D2EF20223964AD00F20CCF /* GRDBKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2EF1F223964AD00F20CCF /* GRDBKitTests.swift */; };
 		D7D2EF22223964AD00F20CCF /* GRDBKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7745BCA21E3BFAF004C9C6C /* GRDBKit.framework */; };
@@ -48,6 +53,11 @@
 		D7745BE721E3C16D004C9C6C /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
 		D7745BE921E3C1BD004C9C6C /* GRDBKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBKitError.swift; sourceTree = "<group>"; };
 		D7745BFA21E506B9004C9C6C /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
+		D78848A622845AEF0077A793 /* Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
+		D7A867CB224A7A36005BAC35 /* TimestampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampTests.swift; sourceTree = "<group>"; };
+		D7A867CE224A7A63005BAC35 /* TestInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInt.swift; sourceTree = "<group>"; };
+		D7A867D0224A7A68005BAC35 /* TestString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
+		D7A867D2224A7B35005BAC35 /* Migrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrate.swift; sourceTree = "<group>"; };
 		D7BD4FA2220B53AE0071F392 /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		D7D2EF1D223964AD00F20CCF /* GRDBKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRDBKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D2EF1F223964AD00F20CCF /* GRDBKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBKitTests.swift; sourceTree = "<group>"; };
@@ -121,6 +131,7 @@
 			children = (
 				D7745BCD21E3BFAF004C9C6C /* GRDBKit.h */,
 				D7745BCE21E3BFAF004C9C6C /* Info.plist */,
+				D78848A622845AEF0077A793 /* Exported.swift */,
 				D7745BE521E3C160004C9C6C /* Model.swift */,
 				D71832C4220A3DC7008E4090 /* IntModel.swift */,
 				D71832C6220A3DDA008E4090 /* StringModel.swift */,
@@ -132,10 +143,22 @@
 			path = GRDBKit;
 			sourceTree = "<group>";
 		};
+		D7A867CD224A7A56005BAC35 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				D7A867CE224A7A63005BAC35 /* TestInt.swift */,
+				D7A867D0224A7A68005BAC35 /* TestString.swift */,
+				D7A867D2224A7B35005BAC35 /* Migrate.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
 		D7D2EF1E223964AD00F20CCF /* GRDBKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				D7D2EF1F223964AD00F20CCF /* GRDBKitTests.swift */,
+				D7A867CB224A7A36005BAC35 /* TimestampTests.swift */,
+				D7A867CD224A7A56005BAC35 /* Setup */,
 				D7D2EF21223964AD00F20CCF /* Info.plist */,
 			);
 			path = GRDBKitTests;
@@ -219,6 +242,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D7745BC021E3BFAF004C9C6C;
 			productRefGroup = D7745BCB21E3BFAF004C9C6C /* Products */;
@@ -322,6 +346,7 @@
 				D71832C7220A3DDA008E4090 /* StringModel.swift in Sources */,
 				D7745BEA21E3C1BD004C9C6C /* GRDBKitError.swift in Sources */,
 				D71832C5220A3DC7008E4090 /* IntModel.swift in Sources */,
+				D78848A722845AEF0077A793 /* Exported.swift in Sources */,
 				D7745BE821E3C16D004C9C6C /* ID.swift in Sources */,
 				D7745BFB21E506B9004C9C6C /* Pivot.swift in Sources */,
 				D7745BE621E3C160004C9C6C /* Model.swift in Sources */,
@@ -332,6 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A867CC224A7A36005BAC35 /* TimestampTests.swift in Sources */,
+				D7A867CF224A7A63005BAC35 /* TestInt.swift in Sources */,
+				D7A867D1224A7A68005BAC35 /* TestString.swift in Sources */,
+				D7A867D3224A7B35005BAC35 /* Migrate.swift in Sources */,
 				D7D2EF20223964AD00F20CCF /* GRDBKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +435,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -463,6 +493,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -492,7 +523,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -519,7 +550,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiimtmac.GRDBKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -540,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiimtmac.GRDBKit.GRDBKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -561,7 +592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiimtmac.GRDBKit.GRDBKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
