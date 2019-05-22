@@ -1,5 +1,7 @@
 PODS:
-  - GRDB.swift (3.7.0)
+  - GRDB.swift (3.7.0):
+    - GRDB.swift/standard (= 3.7.0)
+  - GRDB.swift/standard (3.7.0)
 
 DEPENDENCIES:
   - GRDB.swift (from `https://github.com/groue/GRDB.swift.git`, branch `GRDB-4.0`)
@@ -11,11 +13,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   GRDB.swift:
-    :commit: bfa5fbe8ce41ef16f03537b5e044b2df8aa29762
+    :commit: d2b913754872bac1e515f29fa5eb88b66e02b4a9
     :git: https://github.com/groue/GRDB.swift.git
 
 SPEC CHECKSUMS:
-  GRDB.swift: 995f3289c25acc7970497a66ac4ee45a30c7b12c
+  GRDB.swift: 71ab04a6e727e34c034513c4d15901ea35eb1f0d
 
 PODFILE CHECKSUM: e9ecf17d08220b88b1e6b6c277fdae3fbdd8f9bc
 
