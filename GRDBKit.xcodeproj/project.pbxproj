@@ -279,16 +279,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GRDBKitTests/Pods-GRDBKitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GRDBKitTests/Pods-GRDBKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GRDBKitTests/Pods-GRDBKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
