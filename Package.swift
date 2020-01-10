@@ -9,10 +9,10 @@ let package = Package(
         .library(name: "GRDBKit", targets: ["GRDBKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/groue/GRDB.swift.git", from: "4.5.0")
+        .package(url: "https://github.com/groue/GRDB.swift.git", from: "4.0.0")
     ],
     targets: [
-        .target(name: "GRDBKit", dependencies: ["GRDB"], path: "GRDBKit", exclude: ["GRDBKit.h","Info.plist"]),
-        .testTarget(name: "GRDBKitTests", dependencies: ["GRDB", "GRDBKit"], path: "GRDBKitTests"),
+        .target(name: "GRDBKit", dependencies: ["GRDB"]),
+        .testTarget(name: "GRDBKitTests", dependencies: ["GRDBKit"]),
     ]
 )

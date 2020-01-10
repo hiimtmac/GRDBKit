@@ -38,3 +38,14 @@ extension GRDBModel {
         }
     }
 }
+
+public protocol GRDBIDEquatable: GRDBModel, Equatable {}
+extension GRDBIDEquatable where Self.ID: Equatable {
+    public static func ==(lhs: Self, rhs: Self) -> Bool {
+        if let l = lhs.modelID, let r = rhs.modelID {
+            return l == r
+        } else {
+            return false
+        }
+    }
+}
