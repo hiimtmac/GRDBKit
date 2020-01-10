@@ -7,7 +7,7 @@ This library is a fusion of ideas from Vapor's [Fluent](https://github.com/vapor
 
 ## Requirements
 
-- Swift 4.2+
+- Swift 5.1+
 
 ## Usage
 

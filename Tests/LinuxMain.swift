@@ -3,6 +3,6 @@ import XCTest
 import GRDBKitTests
 
 var tests = [XCTestCaseEntry]()
-tests += GRDBKitTests.allTests()
-tests += TimestampTests.allTests()
+tests += ModelTests.allTests()
+tests += MigrationTests.allTests()
 XCTMain(tests)

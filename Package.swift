@@ -13,6 +13,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "GRDBKit", dependencies: ["GRDB"]),
-        .testTarget(name: "GRDBKitTests", dependencies: ["GRDB", "GRDBKit"]),
+        .testTarget(name: "GRDBKitTests", dependencies: ["GRDBKit"]),
     ]
 )
