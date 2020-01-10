@@ -1,5 +1,2 @@
-# pods
-Pods/
-
-# userdata
+.swiftpm
 xcuserdata/
