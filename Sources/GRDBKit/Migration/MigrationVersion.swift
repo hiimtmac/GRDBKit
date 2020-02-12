@@ -13,7 +13,7 @@ public protocol MigrationVersion {
 }
 
 extension MigrationVersion {
-    var migrations: [Self] {
+    public var migrations: [Self] {
         return resolveMigrations().reversed()
     }
     
