@@ -1,6 +1,6 @@
 # GRDBKit
 
-This library is a fusion of ideas from Vapor's [Fluent](https://github.com/vapor/fluent) typealiases to be used with [GRDB](https://github.com/groue/GRDB.swift)
+Migration helpers for [GRDB](https://github.com/groue/GRDB.swift)
 
 ## Requirements
 
