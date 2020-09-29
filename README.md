@@ -4,7 +4,7 @@ This library is a fusion of ideas from Vapor's [Fluent](https://github.com/vapor
 
 ## Requirements
 
-- Swift 5.1+
+- Swift 5.3+
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
@@ -16,7 +16,7 @@ import PackageDescription
 let package = Package(
   name: "TestProject",
   dependencies: [
-    .package(url: "https://github.com/hiimtmac/GRDBKit.git", from: "1.0.0")
+    .package(url: "https://github.com/hiimtmac/GRDBKit.git", from: "2.0.0")
   ]
 )
 ```
@@ -33,52 +33,6 @@ end
 ```
 
 ## Usage
-
-### Stronger Types for Primary/Foreign Keys
-
-Conform models to `GRDBStringModel` or `GRDBIntModel`, then you can use its pk type as an alias to make sure when you use it its the right type.
-
-```swift
-final class Table3: GRDBStringModel, TableRecord, FetchableRecord, PersistableRecord, GRDBIDEquatable {
-    var id: String? // if we change the id type we dont have to change it elsewhere
-    var table2Id: Table2.ID // if we change the id type of Table1 we dont have to change it in either init
-    
-    init(id: String?, table2Id: Table2.ID) {
-        self.id = id
-        self.table2Id = table2Id
-    }
-    
-    ...
-    
-    convenience init(row: Row) {
-        let id: ID? = row[Columns.id]
-        let table2Id: Table2.ID = row[Columns.table2Id]
-        self.init(id: id, name: name, table2Id: table2Id)
-    }
-
-    ...
-}
-```
-
-### GRDBIDEquatable
-
-If you want your models to be equal regardless of their content, only on the ID, conformt them to `GRDBIDEquatable`
-
-```swift
-final class Table3: GRDBStringModel, TableRecord, FetchableRecord, PersistableRecord, GRDBIDEquatable {
-    var id: String?
-    var name: String
-    var table2Id: Table2.ID
-    
-    ...
-}
-
-func testIDEquatable() {
-    let one = Table3(id: "1", name: "good", table2Id: 3)
-    let two = Table3(id: "1", name: "bad", table2Id: 2)
-    XCTAssertEqual(one, two) // test passes
-}
-```
 
 ### Migration Help
 

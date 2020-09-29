@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     
     s.name                    = 'GRDBKit'
-    s.version                 = '1.0.1'
+    s.version                 = '2.0.0'
     s.summary                 = 'Using ideas from Vapor\'s Fluent with GRDB.swift'
     s.description             = <<-DESC
                                 The main object of this framework is to create some ORM
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
     s.license                 = { :type => 'MIT', :file => 'LICENSE' }
     
     s.author                  = 'hiimtmac'
-    s.ios.deployment_target   = '11.0'
-    s.swift_version           = '5.1'
+    s.ios.deployment_target   = '13.0'
+    s.swift_version           = '5.3'
     
     s.source                  = { :git => "https://github.com/hiimtmac/GRDBKit.git", :tag => "#{s.version}" }
     s.source_files            = "Sources/GRDBKit/**/*.{swift}"

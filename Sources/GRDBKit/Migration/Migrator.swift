@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import GRDB
 
 extension DatabaseWriter {
     public func migrateTo<T: MigrationVersion>(version: T) throws {
