@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import GRDB
 import GRDBKit
 
-final class Table1: GRDBStringModel, TableRecord, FetchableRecord, PersistableRecord {
+final class Table1: GRDBModel, TableRecord, FetchableRecord, PersistableRecord {
     var id: String?
     var name: String
     var age: Int?
@@ -26,10 +25,8 @@ final class Table1: GRDBStringModel, TableRecord, FetchableRecord, PersistableRe
         case age
     }
     
-    static let databaseTableName = "table1"
-    
     convenience init(row: Row) {
-        let id: ID? = row[Columns.id]
+        let id: ID = row[Columns.id]
         let name: String = row[Columns.name]
         let age: Int? = row[Columns.age]
         self.init(id: id, name: name, age: age)
@@ -42,7 +39,7 @@ final class Table1: GRDBStringModel, TableRecord, FetchableRecord, PersistableRe
     }
 }
 
-final class Table2: GRDBIntModel, TableRecord, FetchableRecord, PersistableRecord {
+final class Table2: GRDBModel, TableRecord, FetchableRecord, PersistableRecord {
     var id: Int?
     var name: String
     var active: Bool
@@ -59,10 +56,8 @@ final class Table2: GRDBIntModel, TableRecord, FetchableRecord, PersistableRecor
         case active
     }
     
-    static let databaseTableName = "table2"
-    
     convenience init(row: Row) {
-        let id: ID? = row[Columns.id]
+        let id: ID = row[Columns.id]
         let name: String = row[Columns.name]
         let active: Bool = row[Columns.active]
         self.init(id: id, name: name, active: active)
@@ -75,7 +70,7 @@ final class Table2: GRDBIntModel, TableRecord, FetchableRecord, PersistableRecor
     }
 }
 
-final class Table3: GRDBStringModel, TableRecord, FetchableRecord, PersistableRecord, GRDBIDEquatable {
+final class Table3: GRDBModel, TableRecord, FetchableRecord, PersistableRecord {
     var id: String?
     var name: String
     var table2Id: Table2.ID
@@ -92,10 +87,8 @@ final class Table3: GRDBStringModel, TableRecord, FetchableRecord, PersistableRe
         case table2Id
     }
     
-    static let databaseTableName = "table3"
-    
     convenience init(row: Row) {
-        let id: ID? = row[Columns.id]
+        let id: ID = row[Columns.id]
         let name: String = row[Columns.name]
         let table2Id: Table2.ID = row[Columns.table2Id]
         self.init(id: id, name: name, table2Id: table2Id)
@@ -107,9 +100,6 @@ final class Table3: GRDBStringModel, TableRecord, FetchableRecord, PersistableRe
         container[Columns.table2Id] = table2Id
     }
 }
-
-let createDate = DateComponents(calendar: .current, year: 2018, month: 1, day: 1).date!
-let updateDate = DateComponents(calendar: .current, year: 2019, month: 1, day: 1).date!
 
 func seed() throws -> DatabaseQueue {
     let queue = DatabaseQueue()

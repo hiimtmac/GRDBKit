@@ -1,13 +1,22 @@
 import XCTest
-import GRDB
 @testable import GRDBKit
 
 class ModelTests: XCTestCase {
     
-    func testIDEquatable() {
-        let one = Table3(id: "1", name: "good", table2Id: 3)
-        let two = Table3(id: "1", name: "bad", table2Id: 2)
-        XCTAssertEqual(one, two)
+    func testOptionalTypes() throws {
+        struct Opt: GRDBModel {
+            var id: String?
+            init(_ id: String? = nil) { self.id = id }
+        }
+        
+        struct NonOpt: GRDBModel {
+            var id: String
+            init(_ id: String = "") { self.id = id }
+        }
+        
+        XCTAssertThrowsError(try Opt().requireID())
+        XCTAssertEqual(try Opt("hi").requireID(), "hi")
+//        NonOpt().requireID() // doesnt compile
     }
     
     func testModelMatchesSchema() throws {
@@ -19,7 +28,7 @@ class ModelTests: XCTestCase {
     }
     
     static var allTests = [
-        ("testIDEquatable", testIDEquatable),
+        ("testOptionalTypes", testOptionalTypes),
         ("testModelMatchesSchema", testModelMatchesSchema)
     ]
 }
