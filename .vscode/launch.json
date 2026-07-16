@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:GRDBKit}",
+      "name": "Debug GRDBKitClient",
+      "target": "GRDBKitClient",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug GRDBKitClient"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:GRDBKit}",
+      "name": "Release GRDBKitClient",
+      "target": "GRDBKitClient",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release GRDBKitClient"
+    }
+  ]
+}
