@@ -16,7 +16,7 @@ let swiftSettings: [SwiftSetting] = [
 
 let package = Package(
     name: "GRDBKit",
-    platforms: [.macOS(.v26), .iOS(.v26), .watchOS(.v26)],
+    platforms: [.macOS(.v26), .iOS(.v18), .watchOS(.v26)],
     products: [
         .library(name: "GRDBKit", targets: ["GRDBKit"]),
         .executable(name: "GRDBKitClient", targets: ["GRDBKitClient"]),

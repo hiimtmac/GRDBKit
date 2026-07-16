@@ -10,7 +10,7 @@ Swift macros and helpers that reduce boilerplate when working with [GRDB](https:
 ## Requirements
 
 - Swift tools version 6.3+
-- macOS 26 / iOS 26 / watchOS 26
+- macOS 26 / iOS 18 / watchOS 26
 - [GRDB](https://github.com/groue/GRDB.swift) 7.11.0+
 
 ## Installation
