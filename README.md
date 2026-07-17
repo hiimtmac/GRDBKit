@@ -23,7 +23,7 @@ import PackageDescription
 let package = Package(
     name: "MyProject",
     dependencies: [
-        .package(url: "https://github.com/hiimtmac/GRDBKit.git", from: "2.0.0")
+        .package(url: "https://github.com/hiimtmac/GRDBKit.git", branch: "main")
     ],
     targets: [
         .target(
